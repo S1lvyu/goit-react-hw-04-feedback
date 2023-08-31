@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Statistics.module.css';
-import PropTypes from 'prop-types';
+
 import { useFeedbacks } from 'store/FeedbacksContext';
 export default function Statistics() {
   const { feedbacks, countTotalFeedback, countPositiveFeedbackPercentage } =
@@ -31,8 +31,3 @@ export default function Statistics() {
     </div>
   );
 }
-Statistics.propTypes = {
-  feedbacks: PropTypes.object,
-  total: PropTypes.number,
-  positiveFeedbacks: PropTypes.string,
-};
